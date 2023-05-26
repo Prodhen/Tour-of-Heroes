@@ -14,7 +14,7 @@ import { Houselocation } from '../houselocation';
         </form>
       </section>
     <section>
-    <app-housing-location> </app-housing-location>
+    <app-housing-location [houseLocation]="houseLocation"> </app-housing-location>
     </section>
     
 `,
@@ -23,7 +23,7 @@ import { Houselocation } from '../houselocation';
 })
 
 export class HomeComponent {
-  housingLocation:Houselocation={
+  houseLocation:Houselocation={
     id:9999,
     name:'Test Home',
     city:'test City',
