@@ -7,9 +7,12 @@ import {Houselocation} from '../houselocation'
   standalone: true,
   imports: [CommonModule],
   template: `
-    <p>
-      housing-location works!
-    </p>
+   <section class="listing">
+    <img class="listing-photo" [src]="houseLocation.photo" alt="Exterior photo of {{houseLocation.name }}">
+   <h2 class="listing-heading">{{houseLocation.name}}</h2>
+   <p class="listing-location">{{houseLocation.city}},{{houseLocation.state}}</p>
+  </section>
+
   `,
   styleUrls: ['./housing-location.component.css']
 })
